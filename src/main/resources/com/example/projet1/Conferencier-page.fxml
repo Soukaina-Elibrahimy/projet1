@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane layoutX="-1.0" prefHeight="700.0" prefWidth="234.0" style="-fx-background-color: linear-gradient(#36618F,#E65F3A);" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="45.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../3.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Deconnecter" layoutX="55.0" layoutY="600.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="120.0" style="-fx-border-radius: 8; -fx-background-color: #36618f;" text="Deconnecter" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="logo" fitHeight="200.0" fitWidth="200.0" layoutX="849.0" layoutY="-48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../logo2-01.png" />
+         </image>
+      </ImageView>
+      <TableView layoutX="302.0" layoutY="169.0" prefHeight="367.0" prefWidth="631.0" style="-fx-border-color: none; -fx-background-color: transparent;">
+        <columns>
+          <TableColumn prefWidth="194.13330078125" style="-fx-border-color: #E65F3A; -fx-pref-height: 50px; -fx-background-radius: 10 0 0 0; -fx-border-radius: 10 0 0 0; -fx-text-color: #E65F3A;" text="Theme de la session" />
+          <TableColumn minWidth="0.0" prefWidth="125.86666870117188" style="-fx-border-color: #E65F3A;" text="Date" />
+            <TableColumn prefWidth="130.13336181640625" style="-fx-border-color: #E65F3A;" text="Heure" />
+            <TableColumn minWidth="0.0" prefWidth="177.5999755859375" style="-fx-background-radius: 0 10 0 0; -fx-border-color: #E65F3A; -fx-border-radius: 0 10 0 0;" text="Lieu" />
+        </columns>
+      </TableView>
+      <Text fill="WHITE" layoutX="65.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom Conferencier">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
